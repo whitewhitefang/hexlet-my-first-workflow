@@ -1,0 +1,17 @@
+name: hello-world
+
+on: push
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - uses: actions/checkout@v4
+
+      - name: Print a phrase
+        
+        run: make say-hello
